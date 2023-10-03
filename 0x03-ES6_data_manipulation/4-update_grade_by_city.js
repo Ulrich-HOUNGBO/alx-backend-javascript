@@ -6,11 +6,11 @@ export default function updateStudentGradeByCity(students, city, newGrades) {
     return [];
   }
   return students
-    .filter((students) => students.location === city)
-    .map((students) => {
-      const [newGrade] = newGrades.filter((grade) => grade.id === students.id);
+    .filter((student) => student.location === city)
+    .map((student) => {
+      const [newGrade] = newGrades.filter((item) => item.studentId === student.id);
       return {
-        ...students,
+        ...student,
         grade: newGrade ? newGrade.grade : 'N/A',
       };
     });
