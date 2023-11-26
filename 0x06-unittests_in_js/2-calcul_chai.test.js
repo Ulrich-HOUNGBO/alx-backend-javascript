@@ -15,6 +15,7 @@ describe('calculateNumber type == SUM', () => {
         chai.expect(calculateNumber('SUM', -1, -1)).to.equal(-2);
     });
 });
+
 describe('calculateNumber type == SUBTRACT', () => {
     it('checks the output', () => {
         chai.expect(calculateNumber('SUBTRACT', 5, 3)).to.equal(2);
@@ -26,6 +27,7 @@ describe('calculateNumber type == SUBTRACT', () => {
         chai.expect(calculateNumber('SUBTRACT', -1.5, 0)).to.equal(-1);
     });
 });
+
 describe('calculateNumber type == DIVIDE', () => {
     it('check the output', () => {
         chai.expect(calculateNumber('DIVIDE', 16, 2)).to.equal(8);
